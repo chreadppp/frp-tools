@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  frp-tools:
+    build: ./
+    #    dockerfile: Dockerfile
+    ports:
+      - "8899"
+    networks:
+      - default
+      - nginx-proxy
+    environment:
+       - SERVER_PORT=8899
+       - MYSQL_HOST=mysql
+       - MYSQL_DB=frp
+       - MYSQL_PORT=mysql
+       - MYSQL_USER=frp
+       - MYSQL_PASSWD=123456
+
+networks:
+  nginx-proxy:
+    external: true
