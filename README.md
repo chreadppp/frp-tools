@@ -1,5 +1,6 @@
 # frp-tools
-[README](README.md) | [中文文档](README_zh.md)
+[[README](README.md) | [中文文档](README_zh.md)](https://github.com/Zo3i/frpMgr/blob/master/README_zh.md)
+clone https://github.com/Zo3i/frpMgr
 
 ---
 
